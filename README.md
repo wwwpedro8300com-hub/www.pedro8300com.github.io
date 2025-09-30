@@ -1,2 +1,2 @@
-# www.pedro8300com.github.io
+# wwwpedro8300com.github.io
 Mi sitio web personal
