@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    color: #000000;
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #3498db;
+}
+
+/* Secciones generales */
+.seccion {
+    padding: 80px 20px 40px;
+    min-height: 100vh;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Inicio */
+.inicio {
+    background-image: url('fondo-inicio.jpg');
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;   
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.inicio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.mi-nombre {
+    color: #3367ac;
+}
+
+.mi-foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    margin-top: 2rem;
+    border: 5px solid #ffffff;
+}
+
+/* Sobre Mí */
+.sobre-mi {
+    background-color: #ecf0f1;
+}
+
+.sobre-mi h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.info-personal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.tarjeta h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/*Proyectos */
+.proyectos {
+    background-color: #34495e;
+    color: white;
+}
+
+.proyectos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.lista-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.proyecto {
+    background: white;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.proyecto h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.tecnologias {
+    background: #3498db;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Contacto */
+.contacto {
+      background-image: url('fondo-inicio.jpg');
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;   
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.formulario-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Formulario */
+.grupo-form {
+    margin-bottom: 1.5rem;
+}
+
+.grupo-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.grupo-form input,
+.grupo-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.grupo-form input:focus,
+.grupo-form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.boton {
+    background: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #2980b9;
+}
+
+/* Información de contacto */
+.info-contacto {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.info-contacto h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.redes p {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .formulario-contacto {
+        grid-template-columns: 1fr;
+    }
+    
+    .inicio h1 {
+        font-size: 2rem;
+    }
+    
+    .mi-foto {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion {
+        padding: 100px 15px 40px;
+    }
+    
+    .info-personal,
+    .lista-proyectos {
+        grid-template-columns: 1fr;
+    }
+    
+    .inicio h1 {
+        font-size: 1.5rem;
+    }
+}
